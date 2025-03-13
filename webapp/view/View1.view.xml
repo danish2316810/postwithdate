@@ -1,0 +1,18 @@
+<mvc:View controllerName="app.csrf.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <f:SimpleForm>
+        <Label text="Customer ID"></Label>
+        <Input id="idCustId"></Input>
+        <Label text="date"></Label>
+        <Input id="idDate" type="Date"></Input>
+        <Label text="Customer Name"></Label>
+        <Input id="idName"></Input>
+        </f:SimpleForm>
+         <Button text="submit" press="onCreate"></Button>
+        </content>
+    </Page>
+</mvc:View>
