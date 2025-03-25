@@ -1,0 +1,23 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+controllerName="app.csrf.controller.ListView">
+<Page >
+
+<List items="{/customerEntitySet}" selectionChange="onSelect"  mode="SingleSelectMaster">
+     <items>
+        <ObjectListItem intro="{Customerid}" title="{Dateofjoin}" number="{Custname}"></ObjectListItem>
+     </items>
+</List>
+	<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button text="create" press="onPressCreate" type="Attention" />
+				
+				<Button text="Edit" press="onPressEdit" type="Accept"/>
+				
+			</OverflowToolbar>
+		</footer>
+
+</Page>
+
+
+</mvc:View>

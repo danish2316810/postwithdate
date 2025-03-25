@@ -88,20 +88,41 @@
             },
             "routes": [
                 {
-                    "name": "RouteView1",
-                    "pattern": ":?query:",
-                    "target": [
-                        "TargetView1"
+                    "name": "RouteListView",
+                    "pattern": "",
+                    "target": [ 
+                        "TargetListView"
                     ]
+                },
+                {
+                    "name": "RouteView1",
+                    "pattern":"View1",
+                    "target":"TargetView1"
+                },
+                {
+                    "name":"RouteUpdate",
+                    "pattern": "Update/{cId}",
+                    "target":"TargetUpdate"
                 }
             ],
             "targets": {
-                "TargetView1": {
+                "TargetListView": {
                     "viewType": "XML",
                     "transition": "slide",
                     "clearControlAggregation": false,
-                    "viewId": "View1",
-                    "viewName": "View1"
+                    "viewId": "idList",
+                    "viewName": "ListView"
+                },
+                "TargetView1":{
+                    "viewId": "idView1",
+                    "viewName": "View1",
+                    "controlAggregation": "pages"
+                    
+                },
+                "TargetUpdate":{
+                    "viewId": "idUpdate",
+                    "viewName": "UpdateView",
+                    "controlAggregation": "pages"
                 }
             }
         },

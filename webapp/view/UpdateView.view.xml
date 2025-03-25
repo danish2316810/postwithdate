@@ -1,0 +1,19 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+controllerName="app.csrf.controller.UpdateView" xmlns:f="sap.ui.layout.form">
+<Page >
+
+     <f:SimpleForm>
+        <Label text="Customer ID"></Label>
+        <Input id="idCustIdUp" value="{UpdateModel>/custID}" enabled="false"></Input>
+        <Label text="date"></Label>
+        <Input id="idDateUp" type="Date" value="{UpdateModel>/date}"></Input>
+        <Label text="Customer Name"></Label>
+        <Input id="idNameUp" value="{UpdateModel>/custName}"></Input>
+     </f:SimpleForm>
+         <Button text="UPDATE" press="onUpdate"></Button>
+        
+	
+</Page>
+
+
+</mvc:View>
